@@ -25,10 +25,7 @@ const handleButtonClick = (e)=>{
   console.log({btnParent: parent, text: questionText})
 }
 
-
-
 //action: button
 buttons.forEach((btn)=>{
-
   btn.addEventListener('click', handleButtonClick)
 })
