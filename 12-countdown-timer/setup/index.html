@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Countdown</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>countdown timer project</h1>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section class="section-center">
+    <!-- image -->
+    <article class="gift-img">
+      <img src="./gift.jpeg" alt="gift" />
+    </article>
+    <!-- info -->
+    <article class="gift-info">
+      <h3>old iphone giveaway</h3>
+      <h4 class="giveaway">
+        giveaway ends on Sunday, 24 April 2020, 8:00am
+      </h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Reprehenderit molestiae cum libero atque ut voluptate qui consectetur
+        aliquid incidunt voluptatem quos, dolore, non commodi quaerat aliquam
+        eligendi, quisquam totam blanditiis.
+      </p>
+      <!-- set Countdown time -->
+      <div>
+        <form>
+          <div>
+            <label for="year">Year</label>
+            <input type="number" class="date-field" name="year" min="1" max="31" maxlength="2" minlength="1"
+              data-id="year">
+          </div>
+          <div>
+            <label for="month">Month</label>
+            <input type="number" class="date-field" name="month" min="1" max="31" maxlength="2" minlength="1"
+              data-id="month">
+          </div>
+          <div>
+            <label for="day">Day</label>
+            <input type="number" class="date-field" name="day" min="1" max="31" maxlength="2" minlength="1"
+              data-id="day">
+          </div>
+          <div>
+            <label for="hr">hour</label>
+            <input type="number" class="date-field" name="hr" data-id="hr">
+          </div>
+          <div>
+            <label for="min">minute</label>
+            <input type="number" class="date-field" name="min" data-id="min">
+          </div>
+          <div>
+            <label for="sec">second</label>
+            <input type="number" class="date-field" name="sec" data-id="sec">
+          </div>
+          <button type="button" name="countdown-btn" data-id="countdown-btn" class="countdown-btn">Start
+            Countdown</button>
+        </form>
+      </div>
+      <div class="deadline">
+        <!-- days -->
+        <div class="deadline-format">
+          <div>
+            <h4 class="date-element days" data-id="day">00</h4>
+            <span>days</span>
+          </div>
+        </div>
+        <!-- end of days -->
+        <!-- days -->
+        <div class="deadline-format">
+          <div>
+            <h4 class="date-element hours" data-id="hr">00</h4>
+            <span>hours</span>
+          </div>
+        </div>
+        <!-- end of days -->
+        <!-- minutes -->
+        <div class="deadline-format">
+          <div>
+            <h4 class="date-element minutes" data-id="min">00</h4>
+            <span>mins</span>
+          </div>
+        </div>
+        <!-- end of days -->
+        <!-- minutes -->
+        <div class="deadline-format">
+          <div>
+            <h4 class="date-element seconds" data-id="sec">00</h4>
+            <span>secs</span>
+          </div>
+        </div>
+        <!-- end of days -->
+      </div>
+    </article>
+  </section>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
